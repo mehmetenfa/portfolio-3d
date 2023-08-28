@@ -1,8 +1,14 @@
 import React from "react";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Experience from "./components/Experience";
 
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Tech from "./components/Tech";
+import Works from "./components/Works";
 import { BrowserRouter } from "react-router-dom";
+import Stars from "./components/canvas/Stars";
 
 function App() {
   return (
@@ -12,7 +18,15 @@ function App() {
           <Navbar />
           <Hero />
         </div>
-        <div></div>
+        <About />
+        <Experience />
+        <Tech />
+        <Works />
+
+        <div className="relative z-0">
+          <Contact />
+          <Stars />
+        </div>
       </div>
     </BrowserRouter>
   );
